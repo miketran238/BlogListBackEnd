@@ -3,7 +3,8 @@ module.exports = {
     'browser': true,
     'commonjs': true,
     'es2020': true,
-    'node': true
+    'node': true,
+    'jest': true
   },
   'extends': 'eslint:recommended',
   'parserOptions': {
@@ -13,10 +14,6 @@ module.exports = {
     'indent': [
       'error',
       2
-    ],
-    'linebreak-style': [
-      'error',
-      'unix'
     ],
     'quotes': [
       'error',
