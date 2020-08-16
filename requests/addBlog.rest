@@ -1,9 +1,21 @@
+# POST http://localhost:3003/api/blogs
+# content-type: application/json
+
+# {
+#     "title": "Let it go",
+#     "author": "Mike Tran",
+#     "url": "letitgo.com.vn",
+#     "likes": 50
+# }
+
 POST http://localhost:3003/api/blogs
 content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1KIiwiaWQiOiI1ZjM4OGQ2NjA0YTZiNDIwZjg4MDdiYTgiLCJpYXQiOjE1OTc1NDMwNTR9.j0p-4Xk52SE4IrLNE0vsjBE4du3IEOEIHlVpTXbl3mk
 
 {
-    "title": "Let it go",
-    "author": "Mike Tran",
-    "url": "letitgo.com.vn",
-    "likes": 50
+    "title": "Heal the World",
+    "author": "M.J.",
+    "url": "michael.jackson.com",
+    "likes": 1000,
+    "userId": "5f388d6604a6b420f8807ba8"
 }

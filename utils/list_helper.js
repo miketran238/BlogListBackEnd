@@ -1,9 +1,5 @@
 /* eslint-disable linebreak-style */
 
-const dummy = (blogs) => {
-  return 1
-}
-
 const totalLikes = (blogs) => {
   let res = 0
   blogs.map(blog => res += blog.likes)
@@ -19,7 +15,6 @@ const mostLikes = (blogs) => {
 
 
 module.exports = {
-  dummy,
   totalLikes,
   mostLikes
 }

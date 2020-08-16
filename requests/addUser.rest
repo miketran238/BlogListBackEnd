@@ -1,0 +1,11 @@
+POST http://localhost:3003/api/users
+content-type: application/json
+
+{
+    //"username": "MJ",
+    //"name": "Michael Jackson",
+    //"password": "abc"
+    "username": "Mike Tran",
+    "name": "Ngoc Minh Tran",
+    "password": "nmt"
+}

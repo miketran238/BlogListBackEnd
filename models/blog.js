@@ -3,10 +3,18 @@ const mongoose = require('mongoose')
 mongoose.set('useFindAndModify', false)
 
 const blogSchema = new mongoose.Schema({
-  title: String,
+  title: {
+    type: String,
+    minlength: 1,
+    required: true
+  },
   author: String,
   url: String,
-  likes: Number
+  likes: Number,
+  user: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'User'
+  }
 })
 
 blogSchema.set('toJSON', {
